@@ -1,0 +1,48 @@
+<html>
+<form action='employee/AddNewRecord' method="POST" enctype="multipart/form-data">
+        <a href='/employee/displayAll'>Show All Employees</a>
+ <table>   
+<caption><b>Employee Interface</b></caption>
+<tr>
+    <td><b>Employee Id:</b></td>
+    <td><input type='text' name='employeeid'></td>
+</tr>
+
+<tr>
+        <td><b>Employee Name:</b></td>
+        <td><input type='text' name='employeename'></td>
+</tr>
+    
+<tr>    <td><b>Gender:</b></td>
+        <td><input type="radio" name="gender" value="Male" id="gender1">Male
+        <input type="radio" name="gender" value="Female" id="gender2">Female</td></tr><br>
+
+<tr>
+        <td><b>DOB:</b></td>
+        <td><input type='date' name='dob'></td>
+</tr>
+
+<tr>
+      <td><b>Designation</b></td>  
+      <td><select name="designation">
+                <option value="grade1">Grade 1</option>
+                <option value="grade2">Grade 2</option>
+                <option value="grade3">Grade 3</option>
+                
+              </select>
+              </td>
+</tr>
+<tr> 
+        <td><b>Salary</b></td>
+        <td><input type='number' name="salary"></td>
+</tr>
+<tr> 
+        <td><b>Employee Image</b></td>
+        <td><input type='file' name="employeepicture"></td>
+</tr>
+
+</table>
+<input type="submit"><br><br>
+<%=msg %>
+</form>
+</html>
